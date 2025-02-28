@@ -2,20 +2,153 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins';
+}
+
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+  font-family: 'Poppins' !important;
+}
+
+.react-calendar__navigation__label {
+  font-weight: 600;
+  border-radius: 8px !important;
+}
+
+.react-calendar__navigation__label:hover {
+  background: #bfdbfe !important;
+  color: #2563eb !important;
+}
+
+.react-calendar__navigation__arrow {
+  font-size: 1.5rem;
+  border-radius: 8px !important;
+}
+
+.react-calendar__navigation__arrow:hover {
+  background: #bfdbfe !important;
+  color: #2563eb !important;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  text-decoration: none !important;
+}
+
+.react-calendar__tile {
+  border-radius: 8px;
+}
+
+.react-calendar__tile:hover {
+  background: #eff6ff !important;
+  color: #2563eb !important;
+}
+
+
+.react-calendar__tile--now {
+  background: #e9d5ff !important;
+  color: #9333ea !important;
+}
+
+.react-calendar__tile--active {
+  background: #bfdbfe !important;
+  color: #2563eb !important;
+}
+
+.rbc-btn-group:first-child {
+  display: none !important;
+}
+
+.rbc-toolbar-label{
+  text-align: right !important;
+  font-weight: 600;
+  padding: 0 20px !important;
+}
+
+.rbc-btn-group:last-child {
+  font-size: 13px;
+}
+
+.rbc-btn-group:last-child button {
+  border: none !important;
+  background-color: #e9d5ff !important;
+  margin-left: 2px;
+}
+
+.rbc-btn-group:last-child .rbc-active {
+  background-color: #bfdbfe !important;
+  box-shadow: none !important;
+}
+
+.rbc-time-view {
+  border-color: #ddd !important;
+  border-radius: 5px !important;
+  padding: 9px 0;
+}
+
+.rbc-time-header {
+  display: none !important;
+}
+
+.rbc-time-content {
+  border: none !important;
+}
+
+.rbc-time-gutter.rbc-time-column {
+  font-size: 15px !important;
+}
+
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group {
+  padding: 0 20px !important;
+}
+
+.rbc-day-slot {
+  font-size: 14px !important;
+}
+
+.rbc-event {
+  border: none !important;
+  color: black !important;
+  padding: 10px !important;
+  margin: 6px !important;
+  width: 98.5% !important;
+}
+
+.rbc-event:nth-child(1) {
+  background: #e9d5ff;
+}
+
+.rbc-event:nth-child(2) {
+  background: #bfdbfe;
+}
+
+.rbc-event:nth-child(3) {
+  background: #fef9c2;
+}
+
+.rbc-event:nth-child(4) {
+  background: #ffedd4;
+}
+
+.rbc-event:nth-child(5) {
+  background: #e9d5ff;
+}
+
+.rbc-event:nth-child(6) {
+  background: #bfdbfe;
+}
+
+.rbc-event:nth-child(7) {
+  background: #fef9c2;
+}
+
+.rbc-event:nth-child(8) {
+  background: #ffedd4;
+}
+
+.rbc-event-label {
+  font-size: 14px !important;
+  margin-bottom: 5px;
 }
